@@ -31,9 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15sp"
-            android:background="@android:color/holo_red_light"
+            android:background="@android:color/white"
             android:text="Yes, Delete"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/holo_red_light"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -42,9 +42,9 @@
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@android:color/white"
             android:text="No, Exit"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="20dp"
             android:textStyle="bold" />
     </LinearLayout>
