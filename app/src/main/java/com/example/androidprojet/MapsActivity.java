@@ -54,16 +54,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-      /*  BackBtn = findViewById(R.id.local);
+        BackBtn = findViewById(R.id.local);
 
 
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ListActivity.class));
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
             }
-        });*/
+        });
     }
 
 
