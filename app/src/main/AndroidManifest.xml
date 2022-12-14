@@ -6,9 +6,13 @@
     <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,14 +35,24 @@
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDITxNZ2FVKNBI_llmjZiFYLpbnOCtYQQk" />
 
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDITxNZ2FVKNBI_llmjZiFYLpbnOCtYQQk" />
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!--AIzaSyDITxNZ2FVKNBI_llmjZiFYLpbnOCtYQQk-->
+        <!--AIzaSyBE4jWvPcqRqtIICNGZ_8vpczLH8Rtpw7w-->
         <activity
             android:name=".MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps" >
+            <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyDITxNZ2FVKNBI_llmjZiFYLpbnOCtYQQk" />
+
+        </activity>
+
         <activity
             android:name=".RegisterActivity"
             android:exported="false">
